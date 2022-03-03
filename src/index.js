@@ -55,6 +55,7 @@ const { GH_TOKEN, GIST_ID, USERNAME, DAYS } = process.env;
                 payload.commits
                   // Ignore duplicated commits
                   .filter((c) => c.distinct === true)
+                  .filter((c) => c.author.name.includes('Ländle'))
                   .map((c) => api.fetch(`/repos/${repo.name}/commits/${c.sha}`))
               )
             )
