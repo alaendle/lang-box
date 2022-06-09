@@ -8,7 +8,7 @@
     "start": "node --experimental-modules --es-module-specifier-resolution=node src/index"
   },
   "dependencies": {
-    "node-fetch": "3.2.5"
+    "node-fetch": "3.2.6"
   },
   "repository": {
     "type": "git",
