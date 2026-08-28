@@ -21,7 +21,7 @@ jobs:
 
       - run: sudo apt-get update
       - run: sudo apt-get install cmake pkg-config libicu-dev zlib1g-dev libcurl4-openssl-dev libssl-dev ruby-dev
-      - run: sudo gem install github-linguist
+      - run: sudo gem install github-linguist -v 9.6.0
       - run: npm install
       - run: npm start
         env:
